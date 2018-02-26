@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements TrianguloFragment
                         linearLayout.removeAllViews();
                         circuloFragment = new CirculoFragment();
                         transaction.add(R.id.fragment_container, circuloFragment).commit();
+
                         break;
                     case 2:
                         linearLayout.removeAllViews();
