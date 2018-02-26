@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My RecyclerView</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="area">Área</string>
+    <string name="perimetro">Perimetro</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

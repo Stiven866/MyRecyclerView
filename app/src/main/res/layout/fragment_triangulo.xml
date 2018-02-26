@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stivenduque.myrecyclerview.TrianguloFragment"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_image_triangulo"
+        android:background="@drawable/abstrac_triangulo"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccione la operación que desea"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rgrup_triangulo"
+            android:layout_gravity="center">
+            <RadioButton android:id="@+id/radio_area_triangulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/area"
+                />
+            <RadioButton android:id="@+id/radio_perimetro_triangulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/perimetro"
+                />
+        </RadioGroup>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ingrese la altura"
+                    android:inputType="number"
+                    android:id="@+id/et_altura_triangulo"
+                    android:layout_gravity="center"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ingrese la base"
+                    android:inputType="number"
+                    android:id="@+id/et_base_triangulo"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_area"
+                    />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ingrese lado A"
+                    android:inputType="number"
+                    android:id="@+id/et_a_triangulo"
+                    android:layout_gravity="center"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ingrese lado B"
+                    android:inputType="number"
+                    android:id="@+id/et_b_triangulo"
+                    android:layout_gravity="center"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ingrese lado C"
+                    android:inputType="number"
+                    android:id="@+id/et_c_triangulo"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_perimetro"
+                   />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_send"
+                    android:textAllCaps="false"
+                    android:text="Send"
+                    android:background="@color/colorAccent"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
