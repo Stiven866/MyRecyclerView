@@ -86,7 +86,7 @@ public class TrianguloFragment extends Fragment  {
                                    setBase(etBase.getText().toString());
                                    if (getBase().equals("")){etBase.setError("Ingrese la base");}
                                    else{
-                                       resultado =Float.valueOf(getAltura())*Float.valueOf(getBase());
+                                       resultado =Float.valueOf(getAltura())*Float.valueOf(getBase())/2;
                                        tvArea.setText("El area es: " + String.valueOf(resultado));
                                        tvArea.setTextSize(20);
                                        tvArea.setFocusable(true);
